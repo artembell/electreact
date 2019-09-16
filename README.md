@@ -1,2 +1,2 @@
-# electreact
+# reactron
 Electron + React + HMR
