@@ -1,0 +1,43 @@
+{
+	"name": "reactron",
+	"version": "1.0.0",
+	"description": "Electron + React + HMR",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"build:react": "webpack --mode development --config-name react-config",
+		"build": "webpack --mode development --config-name general-config",
+		"start": "electron ./dist/bundle.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/artembell/reactron.git"
+	},
+	"keywords": [
+		"react",
+		"electron",
+		"hmr",
+		"webpack"
+	],
+	"author": "Artem Belyavskiy",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/artembell/reactron/issues"
+	},
+	"homepage": "https://github.com/artembell/reactron#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.6.0",
+		"@babel/core": "^7.6.0",
+		"@babel/preset-env": "^7.6.0",
+		"@babel/preset-react": "^7.0.0",
+		"babel-loader": "^8.0.6",
+		"electron": "^6.0.9",
+		"html-webpack-plugin": "^3.2.0",
+		"webpack": "^4.40.2",
+		"webpack-cli": "^3.3.8"
+	},
+	"dependencies": {
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0"
+	}
+}
